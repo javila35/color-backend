@@ -6,10 +6,6 @@ var app = express();
 
 app.use(cors());
 
-app.listen(3000, () => {
-    console.log("Server @ 3000");
-});
-
 app.get("/", (req, res) => {
     res.json(routes)
 });
@@ -52,4 +48,8 @@ app.get("/gray", (req, res) => {
 
 app.get("*", (req, res) => {
     res.json("Invalid route");
+});
+
+app.listen(process.env.port || 3000, () => {
+    console.log("Server @ 3000");
 });
