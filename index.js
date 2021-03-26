@@ -3,6 +3,7 @@ const cors = require("cors");
 const { colors } = require("./colors.js");
 const routes = require("./routes.js");
 var app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 
@@ -50,6 +51,6 @@ app.get("*", (req, res) => {
     res.json("Invalid route");
 });
 
-app.listen(process.env.port || 3000, () => {
-    console.log("Server @ 3000");
+app.listen(PORT , () => {
+    console.log(`Server @ ${ PORT }`);
 });
