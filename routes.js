@@ -1,6 +1,7 @@
 const routes = [
-    "Color Backend",
-    "Available routes: /all, /red, /orange, /green, /blue, /purple, /brown, /gray"
+  "Color Backend",
+  "Available routes: /all, /colors/:color",
+  "Color Query Options: red, orange, yellow, green, blue, purple, brown, gray",
 ];
 
 exports.routes = routes;
