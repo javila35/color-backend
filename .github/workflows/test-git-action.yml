@@ -1,0 +1,12 @@
+name: Test git action
+
+on:
+  pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: test
+        uses: javila35/bot-test-repo@main
