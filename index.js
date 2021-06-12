@@ -14,6 +14,7 @@ const colorOptions = [
   "purple",
   "brown",
   "gray",
+  "brown",
 ];
 
 app.use(cors());
